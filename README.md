@@ -1,6 +1,6 @@
 # how to use
 
-first drop exe in your osu! folder
+first drop the exe in your osu! folder
 
 then run the program from cmd with the follwing parameters:
 
