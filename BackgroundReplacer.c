@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 3)
     {
-        printf("program must take exactly two argument");
+        printf("program must take exactly two arguments");
         return 1;
     }
     if (strcmpi(argv[2], "-n") != 0 && strcmpi(argv[2], "-a") != 0)
@@ -105,20 +105,17 @@ int main(int argc, char *argv[])
                     if (strcmp(readLine, path) == 0)
                     {
                         ++flag;
-                        fclose(textFile);
                         break;
                     }
                 }
-                fclose(textFile);
             }
-
+            fclose(textFile);
+                
             if (flag == 0)
             {
                 char *fileExtension = strrchr(dirent->d_name, *".");
                 if (fileExtension == NULL)
                 {
-                    
-
                     struct dirent *dirent;
                     DIR *dir = opendir(path);
 
@@ -173,7 +170,6 @@ int main(int argc, char *argv[])
                     closedir(dir);
                 }
             }
-            fclose(textFile);
         }
         closedir(dir);
     }
