@@ -9,7 +9,7 @@ then run the program from cmd with the following arguments:
 
 example usage:
 
-`F:\osu!>BackgroundReplacer.exe C:\imageFolder\image.jpg -n`
+`BackgroundReplacer.exe "C:\imageFolder\image.jpg" -n`
 
 ---
 
